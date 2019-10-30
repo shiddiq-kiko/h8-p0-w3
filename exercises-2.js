@@ -1,5 +1,6 @@
 function balikString(kata){
-    kataBalik = '';
+  var b = new Array(kata)  
+  kataBalik = '';
     for(a=kata.length-1 ; a>= 0 ; a--){
       kataBalik += kata[a]
       }
