@@ -1,7 +1,7 @@
 function palindrome(kata) {
     // you can only write your code here!
-     kataBalik = '';
-      for(a=kata.length-1 ; a>= 0 ; a--){
+     var kataBalik = '';
+      for(var a=kata.length-1 ; a>= 0 ; a--){
         kataBalik += kata[a]
         }
         if(kataBalik == kata){

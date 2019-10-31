@@ -1,19 +1,17 @@
-function pasanganTerbesar(num) {
-    
+  function pasanganTerbesar(num) {   
     var n = `'${num}'`;
-    if(n.length == 8){
-      var na = new Array(n.substring(1, 3), n.substring(3, 5), n.substring(5, 7))
+    var na = []
+    var nad
+      for(var a = 0 ; a < n.length-3; a++){
+      var x = n[a+1]
+      var y = n[a+2]
+      var z = x + y
+      na.push(z) 
       var nab = na.map(Number)
       var nac = nab.sort()
-      var nad = nac[2]
-      return nad
-    } else if(n.length == 10){
-      var nb = new Array(n.substring(1, 3), n.substring(2, 4), n.substring(4, 6), n.substring(3, 5), n.substring(4, 6), n.substring(5, 7), n.substring(7, 9))
-      var nbb = nb.map(Number)
-      var nbc = nbb.sort()
-      var nbd = nbc[6]
-      return nbd
-    }
+      var nad = nac.pop()    
+    } 
+   return nad
   }
 
    // TEST CASES
